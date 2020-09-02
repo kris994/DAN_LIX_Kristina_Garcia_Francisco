@@ -22,7 +22,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.Models
             Directory.CreateDirectory(file);
             using (StreamWriter writer = new StreamWriter(file + @"/IgraPamcenja.txt", append: true))
             {
-                writer.WriteLine($"Date and time: {DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss")}, Total time Played: {time}");
+                writer.WriteLine($"Date and time: {DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss")}, Total time Played: {time.ToString(@"mm\:ss")}");
             }
         }
     }

@@ -6,7 +6,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
     /// <summary>
     /// Genereal information about the game state
     /// </summary>
-    class GameInfoViewModel : ViewModelBase
+    public class GameInfoViewModel : ViewModelBase
     {
         #region Properties
         /// <summary>

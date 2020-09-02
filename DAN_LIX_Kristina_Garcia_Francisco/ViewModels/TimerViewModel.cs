@@ -17,19 +17,22 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// Total time played
         /// </summary>
         private TimeSpan timePlayed;
+        public GameInfoViewModel GameInfo { get; private set; }
         #endregion
 
         #region Constructor
         /// <summary>
         /// Tmie constructor
         /// </summary>
-        /// <param name="time"></param>
-        public TimerViewModel(TimeSpan time)
+        /// <param name="time">the time</param>
+        /// <param name="GameInfo">The Game Info</param>
+        public TimerViewModel(TimeSpan time, GameInfoViewModel GameInfo)
         {
             playedTimer = new DispatcherTimer();
             playedTimer.Interval = time;
             playedTimer.Tick += PlayedTimer_Tick;
             timePlayed = new TimeSpan();
+            this.GameInfo = GameInfo;
         }
 
         /// <summary>
@@ -46,6 +49,22 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// Time
         /// </summary>
         public TimeSpan Time
+        {
+            get
+            {
+                return timePlayed;
+            }
+            set
+            {
+                timePlayed = value;
+                OnPropertyChanged("Time");
+            }
+        }
+
+        /// <summary>
+        /// Left Time
+        /// </summary>
+        public TimeSpan LeftTime
         {
             get
             {
@@ -83,6 +102,12 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         private void PlayedTimer_Tick(object sender, EventArgs e)
         {
             Time = timePlayed.Add(new TimeSpan(0, 0, 1));
+            // The game is over in 1 minute
+            if (timePlayed.Minutes == 1)
+            {
+                GameInfo.GameStatus(false);
+                playedTimer.Stop();
+            }
         }
     }
 }

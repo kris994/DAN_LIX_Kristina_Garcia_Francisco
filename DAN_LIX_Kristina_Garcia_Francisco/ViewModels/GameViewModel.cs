@@ -37,6 +37,11 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
             main = mainOpen;
             SetupGame();
         }
+
+        public GameViewModel()
+        {
+
+        }
         #endregion
 
         /// <summary>
@@ -46,10 +51,10 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         {
             // Loads are the pictures
             Slides = new PictureCollectionViewModel();
-            // Loads the timer
-            Timer = new TimerViewModel(new TimeSpan(0, 0, 1));
             // Loads the game information
-            GameInfo = new GameInfoViewModel();     
+            GameInfo = new GameInfoViewModel();
+            // Loads the timer
+            Timer = new TimerViewModel(new TimeSpan(0, 0, 1), GameInfo);
             GameInfo.ClearInfo();
 
             // Get the images from the image folder then display to be memorized
@@ -70,7 +75,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// </summary>
         /// <param name="slide">The button we are clicking</param>
         public void ClickedSlide(object slide)
-        {
+        {           
             // Checks if its possible to select a slide
             if (Slides.CanSelect)
             {
@@ -91,7 +96,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// <summary>
         /// Game status
         /// </summary>
-        private void GameStatus()
+        public void GameStatus()
         {
             // If all slides were selected, stop the game and save to file
             if (Slides.AllSlidesMatched)

@@ -8,17 +8,17 @@
         Height="650" Width="825">
 
     <DockPanel>
-        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Left" Text="{Binding Timer.Time, StringFormat=Elapsed Time: {0}}" FontSize="24" Margin="10" />
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Left" Text="{Binding Timer.Time, StringFormat=Time: {0} - You have 1 minute finish the game}" FontSize="24" Margin="10" />
         <StackPanel Margin="10" DockPanel.Dock="Bottom">
             <DockPanel LastChildFill="True">
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200" DockPanel.Dock="Right">
                     <StackPanel Visibility="{Binding WinMessage}">
-                        <TextBlock Foreground="#FF51FF00">You Won!</TextBlock>
-                        <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFA1FFA1" FontSize="20">Play Again</Button>
+                        <TextBlock>You Won!</TextBlock>
+                        <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFA1FFA1" FontSize="20" Width="150" HorizontalAlignment="Left">Play Again</Button>
                     </StackPanel>
-                    <StackPanel Visibility="{Binding LostMessage}">
-                        <TextBlock Foreground="#FFFF5050">You Lost!</TextBlock>
-                        <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFFF9085" FontSize="20">Play Again</Button>
+                    <StackPanel Visibility="{Binding LostMessage}" Margin="-150,0,0,0">
+                        <TextBlock>You Lost!</TextBlock>
+                        <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFFF9085" FontSize="20" Width="150" HorizontalAlignment="Left" Content="Play Again"/>
                     </StackPanel>
                 </DockPanel>
             </DockPanel>
