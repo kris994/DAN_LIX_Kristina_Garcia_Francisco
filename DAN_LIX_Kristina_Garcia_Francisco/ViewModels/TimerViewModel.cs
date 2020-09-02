@@ -17,10 +17,6 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// Total time played
         /// </summary>
         private TimeSpan timePlayed;
-        /// <summary>
-        /// Seconds that passed
-        /// </summary>
-        private const int playSeconds = 1;
         #endregion
 
         #region Constructor
@@ -34,6 +30,14 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
             playedTimer.Interval = time;
             playedTimer.Tick += PlayedTimer_Tick;
             timePlayed = new TimeSpan();
+        }
+
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        public TimerViewModel()
+        {
+
         }
         #endregion
 

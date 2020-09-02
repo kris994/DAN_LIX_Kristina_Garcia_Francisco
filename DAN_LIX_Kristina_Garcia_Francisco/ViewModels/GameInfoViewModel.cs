@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using DAN_LIX_Kristina_Garcia_Francisco.Models;
+using System.Windows;
 
 namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
 {

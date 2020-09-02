@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAN_LIX_Kristina_Garcia_Francisco.Models;
+using System;
 
 namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
 {
@@ -92,10 +93,12 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// </summary>
         private void GameStatus()
         {
-            // If all slides were selected, stop the game
+            // If all slides were selected, stop the game and save to file
             if (Slides.AllSlidesMatched)
             {
                 GameInfo.GameStatus(true);
+                ReadWriteFile rwf = new ReadWriteFile();
+                rwf.WriteToFile(Timer.Time);
                 Timer.Stop();
             }
         }
