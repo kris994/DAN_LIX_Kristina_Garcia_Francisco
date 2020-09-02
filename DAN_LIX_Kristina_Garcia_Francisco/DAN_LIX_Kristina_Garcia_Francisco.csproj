@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\DAN_LIX_Kristina_Garcia_Francisco.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,6 +56,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Pictures.cs" />
+    <Compile Include="ViewModels\GameInfoViewModel.cs" />
+    <Compile Include="ViewModels\GameViewModel.cs" />
+    <Compile Include="ViewModels\PictureViewModel.cs" />
+    <Compile Include="ViewModels\PictureCollectionViewModel.cs" />
+    <Compile Include="ViewModels\TimerViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,6 +101,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_E.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_K.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_O.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\letter_U.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\memory_image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
