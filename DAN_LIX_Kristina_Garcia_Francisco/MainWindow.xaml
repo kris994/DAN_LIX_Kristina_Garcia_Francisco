@@ -44,7 +44,7 @@
             </Grid.Resources>
 
             <!-- Left -->
-            <Button Grid.Row="0" Grid.Column="0" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[0]}" Click="Slide_Clicked">
+            <Button Grid.Row="0" Grid.Column="0" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[0]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -53,7 +53,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="1" Grid.Column="0" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[1]}" Click="Slide_Clicked">
+            <Button Grid.Row="1" Grid.Column="0" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[1]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -62,7 +62,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="2" Grid.Column="0" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[2]}" Click="Slide_Clicked">
+            <Button Grid.Row="2" Grid.Column="0" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[2]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -71,7 +71,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="3" Grid.Column="0" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[3]}" Click="Slide_Clicked">
+            <Button Grid.Row="3" Grid.Column="0" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[3]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -81,7 +81,7 @@
                 </Button.Template>
             </Button>
             <!-- Middle-->
-            <Button Grid.Row="0" Grid.Column="1" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[4]}" Click="Slide_Clicked">
+            <Button Grid.Row="0" Grid.Column="1" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[4]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -90,7 +90,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="1" Grid.Column="1" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[5]}" Click="Slide_Clicked">
+            <Button Grid.Row="1" Grid.Column="1" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[5]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -99,7 +99,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="2" Grid.Column="1" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[6]}" Click="Slide_Clicked">
+            <Button Grid.Row="2" Grid.Column="1" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[6]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -108,7 +108,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="3" Grid.Column="1" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[7]}" Click="Slide_Clicked">
+            <Button Grid.Row="3" Grid.Column="1" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[7]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -118,7 +118,7 @@
                 </Button.Template>
             </Button>
             <!-- Right -->
-            <Button Grid.Row="0" Grid.Column="2" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[8]}" Click="Slide_Clicked">
+            <Button Grid.Row="0" Grid.Column="2" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[8]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -127,7 +127,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="1" Grid.Column="2" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[9]}" Click="Slide_Clicked">
+            <Button Grid.Row="1" Grid.Column="2" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[9]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -136,7 +136,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="2" Grid.Column="2" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[10]}" Click="Slide_Clicked">
+            <Button Grid.Row="2" Grid.Column="2" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[10]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -145,7 +145,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="3" Grid.Column="2" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[11]}" Click="Slide_Clicked">
+            <Button Grid.Row="3" Grid.Column="2" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[11]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -155,7 +155,7 @@
                 </Button.Template>
             </Button>
             <!-- More right -->
-            <Button Grid.Row="0" Grid.Column="3" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[12]}" Click="Slide_Clicked">
+            <Button Grid.Row="0" Grid.Column="3" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[12]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -164,7 +164,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="1" Grid.Column="3" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[13]}" Click="Slide_Clicked">
+            <Button Grid.Row="1" Grid.Column="3" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[13]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -173,7 +173,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="2" Grid.Column="3" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[14]}" Click="Slide_Clicked">
+            <Button Grid.Row="2" Grid.Column="3" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[14]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">
@@ -182,7 +182,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Grid.Row="3" Grid.Column="3" IsEnabled="{Binding isSelectable}" DataContext="{Binding MemorySlides[15]}" Click="Slide_Clicked">
+            <Button Grid.Row="3" Grid.Column="3" IsEnabled="{Binding IsSelectable}" DataContext="{Binding MemorySlides[15]}" Click="Slide_Clicked">
                 <Button.Template>
                     <ControlTemplate>
                         <Border Style="{StaticResource SlideBorder}" BorderBrush="{Binding BorderBrush}">

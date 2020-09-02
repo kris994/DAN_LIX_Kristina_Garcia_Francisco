@@ -80,6 +80,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
             if (Slides.CanSelect)
             {
                 var selected = slide as PictureViewModel;
+                selected.GetType();
                 Slides.SelectSlide(selected);
             }
 

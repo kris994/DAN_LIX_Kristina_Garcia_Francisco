@@ -52,6 +52,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
                 isViewed = value;
                 OnPropertyChanged("SlideImage");
                 OnPropertyChanged("BorderBrush");
+                OnPropertyChanged("IsSelectable");
             }
         }
 
@@ -69,6 +70,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
                 isMatched = value;
                 OnPropertyChanged("SlideImage");
                 OnPropertyChanged("BorderBrush");
+                OnPropertyChanged("IsSelectable");
             }
         }
 
@@ -86,6 +88,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
                 isFailed = value;
                 OnPropertyChanged("SlideImage");
                 OnPropertyChanged("BorderBrush");
+                OnPropertyChanged("IsSelectable");
             }
         }
 
@@ -128,7 +131,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         {
             get
             {
-                if (isFailed)
+                if (IsFailed)
                     return Brushes.Red;
                 if (IsMatched)
                     return Brushes.Green;
@@ -153,7 +156,7 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         /// </summary>
         public void MarkFailed()
         {
-            isFailed = true;
+            IsFailed = true;
         }
 
         /// <summary>
@@ -162,8 +165,8 @@ namespace DAN_LIX_Kristina_Garcia_Francisco.ViewModels
         public void ClosePeek()
         {
             IsViewed = false;
-            isFailed = false;
-            OnPropertyChanged("isSelectable");
+            IsFailed = false;
+            OnPropertyChanged("IsSelectable");
             OnPropertyChanged("SlideImage");
         }
 
